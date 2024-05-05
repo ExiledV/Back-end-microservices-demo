@@ -1,0 +1,61 @@
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+
+# IDE and Build Tools
+target/
+.idea/
+.project
+.classpath
+.settings/
+.gradle/
+build.gradle
+local.properties
+
+# IDE Specific Files
+*.iml
+*.iws
+
+# OS Specific files
+.DS_Store
+
+# Distribution / Packaging
+*.war
+*.ear
+*.jar
+
+# Tests
+**/target/test-reports/*
+**/build/reports/*
+
+# Source Control Metadata
+.git/
+.svn/
+.cvs/
+
+# Profiling
+*.hprof
+
+# Dependency Management
+**/pom.xml.lock
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+
+# Spring Specific
+**/application.properties*
+
+# Logs
+*.log
+
+# Documentation
+*.md
+
+# Coverage Reports
+**/coverage/*.xml
+
+# Local Development Environment
+.env

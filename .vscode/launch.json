@@ -2,6 +2,12 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SpringbootServicioUsuariosApplication",
+      "request": "launch",
+      "mainClass": "com.usuarios.springbootserviciousuarios.SpringbootServicioUsuariosApplication"
+    },
+    {
+      "type": "java",
       "name": "Spring Boot-TutorialApplication<tutorial>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -123,7 +129,8 @@
       "mainClass": "com.item.springbootservicioitems.SpringbootServicioItemsApplication",
       "projectName": "springboot-servicio-items",
       "args": "",
-      "envFile": "${workspaceFolder}/.env"
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50817 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=springboot-servicio-items"
     },
     {
       "type": "java",
@@ -155,7 +162,8 @@
       "mainClass": "com.productos.springbootservicioproductos.SpringbootServicioProductosApplication",
       "projectName": "springboot-servicio-productos",
       "args": "",
-      "envFile": "${workspaceFolder}/.env"
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50811 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=springboot-servicio-productos"
     },
     {
       "type": "java",
@@ -174,6 +182,27 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "com.springboot.auth.usuarios.serviciousuariosauth.ServicioUsuariosAuthApplication",
       "projectName": "servicio-usuarios-auth",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-SpringbootServicioConfigServerApplication<springboot-servicio-config-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.config.server.springbootservicioconfigserver.SpringbootServicioConfigServerApplication",
+      "projectName": "springboot-servicio-config-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50791 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=springboot-servicio-config-server"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-AuthApplication<auth>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.auth.template.auth.AuthApplication",
+      "projectName": "auth",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }

@@ -29,7 +29,6 @@ public class EjemploGlobalFilter implements GlobalFilter{
                 exchange.getResponse().getHeaders().add("token", value);
             });
 
-            exchange.getResponse().getCookies().add("color", ResponseCookie.from("color", "rojo").build());
             exchange.getResponse().getHeaders().setContentType(MediaType.APPLICATION_JSON);
         }));
     }

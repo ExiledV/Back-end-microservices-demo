@@ -2,7 +2,7 @@ package com.usuarios.springbootserviciousuarios.usuario.service;
 
 import java.util.List;
 
-import com.usuarios.common.springbootserviciocommonsusuarios.models.Usuario;
+import com.usuarios.springbootserviciousuarios.usuario.model.Usuario;
 
 public interface UsuarioService {
     public Usuario create(Usuario usuario);

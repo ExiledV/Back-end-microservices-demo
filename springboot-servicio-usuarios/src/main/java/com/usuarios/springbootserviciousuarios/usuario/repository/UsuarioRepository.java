@@ -6,7 +6,8 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import com.usuarios.common.springbootserviciocommonsusuarios.models.Usuario;
+import com.usuarios.springbootserviciousuarios.usuario.model.Usuario;
+
 
 @RepositoryRestResource(path = "usuarios")
 public interface UsuarioRepository extends PagingAndSortingRepository<Usuario, Long>, CrudRepository<Usuario, Long>{

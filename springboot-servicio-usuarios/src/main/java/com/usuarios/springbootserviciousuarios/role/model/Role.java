@@ -1,5 +1,4 @@
-package com.usuarios.common.springbootserviciocommonsusuarios.models;
-
+package com.usuarios.springbootserviciousuarios.role.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -18,13 +17,9 @@ public class Role implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    //EL NOMBRE DEBE EMPEZAR POR ROLE_, ES UN ESTANDAR DE SPRING SECURITY Y ES IMPORTANTE
+    //EL NOMBRE NO DEBE EMPEZAR POR ROLE_, ES UN ESTANDAR DE SPRING SECURITY Y ES IMPORTANTE
     @Column(unique = true)
     private String nombre;
-
-    //@ManyToMany(mappedBy = "roles")
-    //private List<Usuario> usuarios;
-
 
     public Long getId() {
         return id;

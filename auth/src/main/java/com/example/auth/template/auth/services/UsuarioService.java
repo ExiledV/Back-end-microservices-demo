@@ -8,8 +8,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import com.example.auth.template.auth.FeignClient.UsuariosFeign;
-import com.usuarios.common.springbootserviciocommonsusuarios.models.Role;
-import com.usuarios.common.springbootserviciocommonsusuarios.models.Usuario;
+import com.example.auth.template.auth.models.Role;
+import com.example.auth.template.auth.models.Usuario;
 
 
 public class UsuarioService implements UserDetailsService{

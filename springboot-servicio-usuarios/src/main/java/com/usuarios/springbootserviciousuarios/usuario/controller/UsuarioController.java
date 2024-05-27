@@ -2,12 +2,10 @@ package com.usuarios.springbootserviciousuarios.usuario.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.usuarios.common.springbootserviciocommonsusuarios.models.Usuario;
+import com.usuarios.springbootserviciousuarios.usuario.model.Usuario;
 import com.usuarios.springbootserviciousuarios.usuario.service.UsuarioService;
 
-import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

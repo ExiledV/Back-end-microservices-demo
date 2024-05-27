@@ -5,7 +5,8 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.usuarios.common.springbootserviciocommonsusuarios.models.Usuario;
+import com.example.auth.template.auth.models.Usuario;
+
 
 
 @FeignClient(name = "servicio-usuarios")

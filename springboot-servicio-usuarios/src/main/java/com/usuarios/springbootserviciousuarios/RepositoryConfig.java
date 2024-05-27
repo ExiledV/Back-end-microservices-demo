@@ -5,8 +5,8 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
-import com.usuarios.common.springbootserviciocommonsusuarios.models.Role;
-import com.usuarios.common.springbootserviciocommonsusuarios.models.Usuario;
+import com.usuarios.springbootserviciousuarios.role.model.Role;
+import com.usuarios.springbootserviciousuarios.usuario.model.Usuario;
 
 
 @Configuration

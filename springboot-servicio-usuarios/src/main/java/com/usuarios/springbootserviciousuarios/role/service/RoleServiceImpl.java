@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.usuarios.common.springbootserviciocommonsusuarios.models.Role;
+import com.usuarios.springbootserviciousuarios.role.model.Role;
 import com.usuarios.springbootserviciousuarios.role.repository.RoleRepository;
 
 @Service

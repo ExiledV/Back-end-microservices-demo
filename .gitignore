@@ -9,6 +9,7 @@
 # IDE and Build Tools
 target/
 .idea/
+.vscode
 .project
 .classpath
 .settings/
@@ -19,6 +20,8 @@ local.properties
 # IDE Specific Files
 *.iml
 *.iws
+
+.config/
 
 # OS Specific files
 .DS_Store

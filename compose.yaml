@@ -1,0 +1,77 @@
+services:
+  auth:
+    container_name: auth
+    build:
+      context: ./auth
+    depends_on:
+      - springboot-servicio-config-server
+      - springboot-servicio-eureka
+      - springboot-servicio-usuarios
+    networks:
+      - microservices-network
+
+  springboot-servicio-eureka:
+    container_name: springboot-servicio-eureka
+    build:
+      context: ./springboot-servicio-eureka
+    ports:
+      - "8761:8761"
+    networks:
+      - microservices-network
+
+  springboot-servicio-config-server:
+    container_name: springboot-servicio-config-server
+    build:
+      context: ./springboot-servicio-config-server
+    ports:
+      - "8888:8888"
+    depends_on:
+      - springboot-servicio-eureka
+    networks:
+      - microservices-network
+
+  springboot-servicio-gateway:
+    container_name: springboot-servicio-gateway
+    build:
+      context: ./springboot-servicio-gateway
+    ports:
+      - "8090:8090"
+    depends_on:
+      - springboot-servicio-eureka
+      - springboot-servicio-config-server
+    networks:
+      - microservices-network
+
+  springboot-servicio-productos:
+    container_name: springboot-servicio-productos
+    build:
+      context: ./springboot-servicio-productos
+    depends_on:
+      - springboot-servicio-eureka
+    networks:
+      - microservices-network
+
+  springboot-servicio-usuarios:
+    container_name: springboot-servicio-usuarios
+    build:
+      context: ./springboot-servicio-usuarios
+    ports:
+      - "8080:8080"
+    depends_on:
+      - springboot-servicio-eureka
+    networks:
+      - microservices-network
+
+  springboot-servicio-items:
+    container_name: springboot-servicio-items
+    build:
+      context: ./springboot-servicio-items
+    depends_on:
+      - springboot-servicio-eureka
+      - springboot-servicio-config-server
+    networks:
+      - microservices-network
+
+networks:
+  microservices-network:
+    driver: bridge

@@ -9,12 +9,13 @@ servidor de configuración con la información protegida fuera de la propia apli
 Mini proyecto orientado a la demostración de habilidades y al asentamiento de conocimientos.
 
 # Tecnologías usadas:
-1. Spring cloud
-2. Spring Security
-3. Eureka server
-4. Api Gateway
-5. Base de datos H2
-6. Docker y Docker compose
+1. Java 17
+2. Spring cloud
+3. Spring Security
+4. Eureka server
+5. Api Gateway
+6. Base de datos H2
+7. Docker y Docker compose
 
 # Cómo iniciar el proyecto
 1. Ejecutamos el archivo build.bat, este archivo ejecutará todos los comandos necesarios para construir los ejecutables de cada microservicio

@@ -6,7 +6,8 @@ El desarrollo abarca desde la interconexión de microservicios, monitoreo, logge
 de un servicio de autenticación la última version de Spring Security. Añadiendo seguridad a toda la aplicación y configurandola mediante un
 servidor de configuración con la información protegida fuera de la propia aplicación.
 
-Mini proyecto orientado a la demostración de habilidades y al asentamiento de conocimientos.
+Mini proyecto orientado a la demostración de habilidades de arquitectura y al asentamiento de conocimientos. Para ver como integro de manera
+habitual un microservicio con testing y manejo de errores, ir al repositorio del servicio EAN.
 
 # Tecnologías usadas:
 1. Java 17
